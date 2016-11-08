@@ -18,7 +18,7 @@ Using an home-grown ORM, the app has 3 basic CRUD functions...
 
 
 ### Just for Fun
-The app also has a funny "Whine" feature, where random sound effects are played to grieve a devoured burger. This feature uses jQuery click listners.
+The app also has a funny "Whine" feature, where random sound effects are played to grieve a devoured burger. This feature uses jQuery click listeners.
 
 Lastly, the app's front-end design uses Bootstrap. This means that your burgers look just as tasty on mobile as they do on desktop. Please see the screenshots below...
 
