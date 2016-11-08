@@ -14,12 +14,14 @@
         <!-- Dynamically Insert Ready Burgers Here -->
         {{#each burgers}}
           {{#unless devoured}}
-          <div class="input-group">
-            <li class="form-control">{{id}}. {{burger_name}}</li>
-            <span class="input-group-btn">
-              <button class="btn btn-success devour-button" type="button" value="{{id}}">Devour It!</button>
-            </span>
-          </div>
+          <form action="burger/eat/{{id}}" method="POST">
+            <div class="input-group">
+              <li class="form-control">{{id}}. {{burger_name}}</li>
+                <span class="input-group-btn">
+                  <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                </span>
+            </div>
+          </form>
           {{/unless}}
         {{/each}}
 
