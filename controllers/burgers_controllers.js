@@ -29,7 +29,7 @@ router.get('/index', function (req, res) {
 
 
 // Create a New Burger
-router.post('/burger/create/:burger_name', function (req, res) {
+router.post('/burger/create', function (req, res) {
   burger.insertOne(req.body.burger_name, function() {
     res.redirect('/index');
   });
@@ -38,8 +38,6 @@ router.post('/burger/create/:burger_name', function (req, res) {
 
 // Devour a Burger
 router.post('/burger/eat/:id', function (req, res) {
-  console.log('hi...')
-  console.log(req.params.id)
   burger.updateOne(req.params.id, function() {
     res.redirect('/index');
   });

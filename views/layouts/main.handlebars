@@ -44,27 +44,30 @@
 
       <br><br>
 
-      <!-- Input New Burgers Box -->        
-      <div class="row">
+      <!-- Input New Burgers Form -->
+      <form action="burger/create" method="POST"> 
+        
+        <!-- Text Area Input -->
+        <div class="row">
+          <!-- Empty Div to help center textarea -->
+          <div class="col-md-3"></div> 
 
-        <!-- Empty Div to help center textarea -->
-        <div class="col-md-3"></div> 
+          <!-- Burger Input Box -->
+          <div class="form-group col-md-6">
+            <center><label for="new_burger" class="red_font">Request a new burger and place your order!</label></center>
+            <textarea class="form-control" columns="8" rows="4" id="new_burger" name="burger_name"></textarea>
+          </div>
 
-        <!-- Burger Input Box -->
-        <div class="form-group col-md-6">
-          <center><label class="red_font">Request a new burger and place your order!</label></center>
-          <textarea class="form-control" columns="8" rows="4" id="new_burger"></textarea>
+          <!-- Empty Div to help center textarea -->
+          <div class="col-md-3"></div> 
         </div>
+      
+        <!-- Submit Button -->
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-danger">Place Order</button>
+        </center>
 
-        <!-- Empty Div to help center textarea -->
-        <div class="col-md-3"></div> 
-
-      </div>
-    
-      <!-- Submit Button -->
-      <center>
-        <button id="submit-button" type="button" class="btn btn-danger">Place Order</button>
-      </center>
+      </form>
 
       <br>
 
