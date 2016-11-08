@@ -12,21 +12,9 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'password', // Add your password
+  password : 'Iforget123', // Add your password
   database : 'burgers_db' // Add your database
 });
-
-
-// Connect to MySQL Database
-// connection.connect(function(err) {
-//   if (err) {
-//     console.error('error connecting: ' + err.stack);
-//     return;
-//   };
-
-//   console.log('connected as id ' + connection.threadId);
-
-// });
 
 
 // Export the Connection
